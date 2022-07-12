@@ -4,7 +4,7 @@ import Button from './Button'
 const Header = ({setShow,show}) => {
   return (
     <div className='header'>
-        <h1>Test Tracker</h1>
+        <h1>Task Tracker</h1>
         <Button show={show} setShow={setShow}/>
     </div>
   )
