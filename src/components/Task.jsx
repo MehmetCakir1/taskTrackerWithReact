@@ -11,7 +11,7 @@ const Task = ({ data,removeItem}) => {
     <div className={!lineThrough ? "task" :" task line"} onClick={()=>setLineThrough(!lineThrough)}>
         <div  >
           <p>{task}</p>
-          <p>{day}</p>
+          <p>{day.split("T").join(" ")}</p>
         </div>
         <div>
           <button className="trash" onClick={()=>removeItem(id)}>
