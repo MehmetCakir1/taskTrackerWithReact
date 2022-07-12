@@ -5,3 +5,4 @@
 * __Props/Components__<br>
 * __Form__<br>
 * __Local Storage__<br>
+<div align="center"><img src="https://github.com/MehmetCakir1/colorGeneratorWithReact/blob/master/newColorGeneratorProject.gif">
