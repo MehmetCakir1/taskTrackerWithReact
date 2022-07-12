@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 60vw;
+    margin: 2rem auto;
+    box-shadow: 0px 10px 10px grey;
+    padding: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+    text-align: center;
+    padding: 1rem;
+}
+.header button{
+    padding:0.5rem 0.7rem;
+    border-radius: 10px;
+    border: none;
+    background-color: lightskyblue;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 2px 2px 2px rgb(110, 110, 231);
+    margin-top: 0.5rem;
+}
+button:active{
+    transform: scale(0.98);
+}
+.addTask{
+    width: 100%;
+    max-width: 40rem;
+    /* border: 1px solid; */
+    margin: auto;
+}
+.form{
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.taskInput{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+}
+.dateInput{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+}
+input{
+    margin-top: 0.2rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 31rem;
+}
+.btnDiv{
+    text-align: center;
+}
+.btnDiv button{
+    padding: 0.4rem 0.6rem;
+    background-color: lightpink;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.1rem;
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(247, 74, 103);
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    width: 80%;
+    max-width: 31rem;
+    margin:0.5rem auto;
+
+}
+.trash{
+    border: none;
+    font-size: 1.1rem;
+    color: red;
+}
+button,input{
+    cursor: pointer;
+}
+.line{
+    text-decoration: line-through;
+    border-left: 10px solid rgb(233, 132, 149);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.noTask{
+    text-align: center;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
