@@ -19,7 +19,7 @@ const AddTask = ({show,handleSubmit,setDay,setTask,day,task}) => {
         <div className="dateInput">
           <label htmlFor="dayTime">Day & Time</label>
           <input 
-          type="date" 
+          type="datetime-local" 
           id="dayTime" 
           name="dayTime"
           value={day}
